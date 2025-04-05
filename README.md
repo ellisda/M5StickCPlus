@@ -11,6 +11,8 @@ In this project, you have a configuration file ```config.h``` where you can conf
 https://www.arduino.cc/en/software
 ```
 
+TASK - Open Arduino IDE Preferences and add Board Manager links below
+
 * Board Manager links:
 ```
 https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json
@@ -21,6 +23,21 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 ```
 git clone https://github.com/grafana/M5StickCPlus
 ```
+
+TASK - Install Library M5StickCPlus
+PROBLEM - `Compilation error: M5_ENV.h: No such file or directory`
+TASK - and M5Stack (or M5Unified if I can figure that out)
+?? TRY Install M5CoreS3 which pull in M5Unified
+
+??M5UnitEnv
+
+Searching for "M5_ENV" library does find a M5Unit-ENV library, whose 1.X release is mising said file but v0.0.9 has it 
+https://github.com/m5stack/M5Unit-ENV/blob/0.0.9/src/M5_ENV.h
+
+FIX -- Download 0.0.9 version
+
+Install PromLokiTransport, PrometheusArduino
+
 
 ## Grafana Dashboard
 There is an example dashboard that you can use inside Grafana for this project, by importing:<br />

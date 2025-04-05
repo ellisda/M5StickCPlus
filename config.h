@@ -1,9 +1,9 @@
 // Set your local WiFi username and password. Please use a 2.4GHz access point
-#define WIFI_SSID     ""
+#define WIFI_SSID     "Never802.11"
 #define WIFI_PASSWORD ""
 
 // Put you name in below, and the location where you will place the sensor
-#define YOUR_NAME ""
+#define YOUR_NAME "David Ellis"
 
 // Comma-separated Prometheus labels (key=value) to apply to the metrics from the sensor
 // Example: site=home,location=study
@@ -12,10 +12,10 @@
 #define PROM_LABELS "site=home,location=study"
 
 // For more information on where to get these values see: https://github.com/grafana/diy-iot/blob/main/README.md#sending-metrics
-#define GC_URL ""
+#define GC_URL "prometheus-us-central1.grafana.net"
 #define GC_PATH "/api/prom/push"
 #define GC_PORT 443
-#define GC_USER ""
+#define GC_USER "772626"
 #define GC_PASS ""
 
 // Set to 1 to show debug information on the LCD screen, or 0 to not display
